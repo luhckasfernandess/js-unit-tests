@@ -16,6 +16,19 @@
       #VQV!'
 */
 
-const vqv = () => {};
+// Criar a função vqv
+const vqv = (name, age) => {
+  // Verifica se recebe parâmetros
+  if (typeof name && typeof age !== 'undefined') {
+    // Retorna a frase esperada quando passados parâmetros: nome, idade
+    // Com template literals os dados são retornados como string ;)
+    return `Oi, meu nome é ${name}!
+Tenho ${age} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
+  }
+  // Retorna 'undefined' quando a função é passada sem parâmetros
+  return undefined;
+};
 
 module.exports = vqv;
