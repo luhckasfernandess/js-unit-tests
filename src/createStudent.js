@@ -15,6 +15,15 @@
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
 
-const createStudent = () => {};
+const createStudent = (nome) => {
+  let object = {
+    // nome: name --> eu não acredito que o teste não tava passando só por causa da ordem
+    name: nome,
+    feedback: () => 'Eita pessoa boa!',
+  };
+  return object;
+};
+
+// console.log(createStudent('Leandrão, o Lobo Solitário'));
 
 module.exports = createStudent;
