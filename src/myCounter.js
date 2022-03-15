@@ -17,14 +17,20 @@
 */
 
 const myCounter = () => {
-  var myArray = [];
-  for (var counter = 0; counter <= 3; counter += 1) {
+  // var ??? Tá de brincadeira comigo.
+  const myArray = [];
+  for (let counter = 0; counter <= 3; counter += 1) {
     myArray.push(counter);
-    for (var counter = 2; counter <= 3; counter += 1) {
-      myArray.push(counter);
-    }
+    // console.log('For1', myArray);
+    // Dá próxima vez que for corrigir um código, lembra de fazer isso in linha pra ñ acabar gerando um loop infinito cabeça.
+    for (let counter2 = 2; counter2 <= 3; counter2 += 1) {
+      myArray.push(counter2);
+    // console.log('For2', myArray);
   }
-  return myArray;
+  }
+    // console.log('Total', myArray);
+    return myArray;
 };
-
+// E tome console.log(). Conselho abençoado do Luquinha no AMA de hj ha ha
+// console.log('MyCounter', myCounter());
 module.exports = myCounter;
